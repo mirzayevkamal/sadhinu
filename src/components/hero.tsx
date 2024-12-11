@@ -17,6 +17,7 @@ export function Hero() {
             </p>
             <div className="flex flex-col pt-6 gap-2 min-[400px]:flex-row">
               <Button
+              onClick={() => window.open("https://dexscreener.com/solana/6v6z1efd6zw3wre9fzyoa3huepucj57ft9xmsd3fmoon", "_blank")}
                 size="lg"
                 className="bg-yellow-400 md:py-[31px] w-full hover:bg-yellow-500 text-gray-900 font-bold text-lg"
               >

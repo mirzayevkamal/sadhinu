@@ -1,3 +1,4 @@
+'use client'
 import { MenuIcon } from 'lucide-react'
 import { Button } from './button'
 import { Sheet, SheetContent, SheetTrigger } from './sheet'
@@ -22,7 +23,7 @@ export function Header() {
             <a href="https://t.me/sadhulkinu" className="transition-colors text-[#000] text-[18px] text-[#000] font-bold uppercase">Community</a>
           </nav>
           <div className="flex items-center space-x-2">
-            <Button className="hidden md:flex text-[20px] bg-orange-500 hover:bg-green-600 font-bold uppercase" variant={"outline"}>Buy SADHINU</Button>
+            <Button onClick={() => window.open("https://dexscreener.com/solana/6v6z1efd6zw3wre9fzyoa3huepucj57ft9xmsd3fmoon", "_blank")} className="hidden md:flex text-[20px] bg-orange-500 hover:bg-green-600 font-bold uppercase" variant={"outline"}>Buy SADHINU</Button>
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden">
@@ -36,7 +37,7 @@ export function Header() {
                   <a href="#tokenomics" className="text-[30px] text-[#3C3D37] uppercase font-bold font-medium">Tokenomics</a>
                   <a href="#roadmap" className="text-[30px] text-[#3C3D37] uppercase font-bold font-medium">Roadmap</a>
                   <a href="https://t.me/sadhulkinu" className="text-[30px] pb-6 text-[#3C3D37] uppercase font-bold font-medium">Community</a>
-                  <Button className="w-full hover:bg-green-600 mt-6 text-[20px] bg-green-500 font-bold uppercase" variant={"outline"}>Buy SADHINU</Button>
+                  <Button onClick={() => window.open("https://dexscreener.com/solana/6v6z1efd6zw3wre9fzyoa3huepucj57ft9xmsd3fmoon", "_blank")} className="w-full hover:bg-green-600 mt-6 text-[20px] bg-green-500 font-bold uppercase" variant={"outline"}>Buy SADHINU</Button>
                 </nav>
               </SheetContent>
             </Sheet>
